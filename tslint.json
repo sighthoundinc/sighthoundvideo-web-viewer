@@ -1,0 +1,95 @@
+{
+  "rules": {
+    // Class names must be LikeThis, not likeThis or like_this.
+    "class-name": true,
+
+    // Files must end with a newline (git whinges if you don't do this).
+    "eofline": true,
+
+    // Don't indent with tabs.
+    "indent": [
+      true,
+      "spaces"
+    ],
+
+    // Don't use Windows-style newlines (this also upsets git, as well as me)..
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+
+    // Don't have trailing whitespace.
+    "no-trailing-whitespace": true,
+
+    // Ensure the copyright notice is present.
+    "file-header": [
+      false,
+      "2017 Sighthound"
+    ],
+
+    // Disallow various type of corrupt JSDoc comment.
+    "jsdoc-format": true,
+
+    // Lines shall end with semicolons. (perhaps when we get more optimistic...)
+    "semicolon": [true, "always"],
+
+    // Ban various crazy variable names (such as "var").
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+
+    // No expression statements that are neither assignments nor calls (eg "x + 1" as a line by itself).
+    "no-unused-expression": true,
+
+    // Avoid comparison to NaN using `== NaN`, since NaN != NaN
+    "use-isnan": true,
+
+    // GOTO considered harmful.
+    "label-position": true,
+
+    // arguments.callee considered harmful:
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee
+    "no-arg": true,
+
+    // No duplicate variable declarations in the same scope.
+    "no-duplicate-variable": true,
+
+    // No variable shadowing. Pretty horrible practice, especially in large functions.
+    "no-shadowed-variable": true,
+
+    // No JS-style object property access via ["..."]. Use the damn type system!
+    "no-string-literal": true,
+
+    // No assignment in conditionals
+    "no-conditional-assignment": true,
+
+    // No explicit String/Number/Object construction
+    "no-construct": true,
+
+    // No 'var' keyword
+    "no-var-keyword": true,
+
+    // Consistent spacing around types
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ]
+  }
+}

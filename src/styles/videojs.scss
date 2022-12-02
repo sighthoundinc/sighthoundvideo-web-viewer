@@ -1,0 +1,54 @@
+  video, .video-js .vjs-tech {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 275px);
+    min-height: 500px;
+  }
+
+  // Required to let video go fullscreen
+  .vjs-fullscreen video,
+  .video-js.vjs-fullscreen .vjs-tech {
+    max-height: initial;
+    min-height: initial;
+  }
+
+  .liveVideo-dimensions {
+    width: auto;
+    height: auto;
+    outline: none;
+  }
+
+  .vjs-live-control {
+    left: 20px;
+  }
+
+  .video-js.vjs-default-skin .vjs-big-play-button { display: none; }
+  .paused .video-js.vjs-default-skin .vjs-big-play-button { display: initial; }
+
+  .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+    width: 15em;
+    text-align: left;
+    z-index: 1000;
+  }
+
+  .video-js .vjs-mute-control, .video-js .vjs-volume-menu-button {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .video-js .vjs-volume-control {
+    display: inline-block;
+  }
+
+  .vp-content {
+    display: inline-block;
+    width: 60%;
+    margin-left: 15px;
+    width: calc(100% - 320px);
+  }
+
+  // Disable clicking of video to pause/play
+  .video-js.vjs-playing .vjs-tech {
+    pointer-events: none;
+  }

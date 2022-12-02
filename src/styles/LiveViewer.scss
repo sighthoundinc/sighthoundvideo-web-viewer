@@ -1,0 +1,47 @@
+.LiveViewer {
+
+  @import "videojs.scss";
+
+  .vjs-play-control {
+    display: none;
+  }
+
+  .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+    width: 15em;
+    text-align: left;
+    position: absolute;
+    left: 80px;
+    z-index: 1000;
+  }
+
+  .video-js .vjs-mute-control, .video-js .vjs-volume-menu-button {
+    display: inline-block;
+  }
+
+  .vjs-progress-control {
+    display: none;
+  }
+
+  .vjs-remaining-time-display {
+    display: none;
+  }
+
+  div.resultRefresh {
+    display: block;
+    width: auto;
+  }
+
+  div.clipsNavigationContainer {
+    float: none;
+  }
+
+  div.clipsDate {
+    float: none;
+  }
+
+  div.clipsResults {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+}

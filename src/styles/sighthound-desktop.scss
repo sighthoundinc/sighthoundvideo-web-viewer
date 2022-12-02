@@ -1,0 +1,342 @@
+div, img, a, p, span {
+  border: none;
+}
+
+/*--- CONTAINER ---*/
+div.container {
+	width: 98%;
+	min-width: 970px;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: auto; }
+
+
+	/*--- HEADER ---*/
+	div.header {
+		clear: both;
+		width: auto;
+		height: 80px;
+		padding: 20px 0; }
+
+		div.header div.logo { float:left; }
+
+		div.header div.pageNav {
+			float:left;
+			margin-top: 22px;
+			margin-left: 40px; }
+
+		div.header div.on-off {
+			margin-top: 22px;
+			float: right; }
+
+		div.header div.cameras {
+			float: right;
+			text-align: right;
+			margin-top: 28px;
+			margin-right: 20px; }
+
+
+	/*--- CONTENT ---*/
+	div.content {
+		width: 98%;
+		min-height: 300px;
+		border: 1px solid #ccc;
+		border-radius: 0;
+		padding: 10px 1%;
+		background-color: #f9f9f9;
+		margin-bottom: 10px; }
+
+		div.contextMenu {
+			height: 44px;
+			margin-bottom: 10px; }
+
+			div.contextMenu div.backButton {
+				float: left;
+				margin-right: 15px;
+			}
+
+			div.contextMenu div.title {
+				height: 44px;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 44px;
+				float: left;
+				margin-right: 15px;
+
+			}
+
+			div.contextMenu div.date {
+				height: 44px;
+				font-size: 18px;
+				line-height: 44px;
+				float: left;
+                }
+			
+			div.contextMenu div.cameras {
+				float: right;
+				text-align: right;
+				margin-top: 7px;
+				margin-right: 20px; }
+			
+      div#live_right_time {
+        float:right;
+      }
+
+      div#live_right_time #liveTime{
+        margin-right:15px;
+      }
+
+			div.contextMenu div.views { float: right; }
+
+			div.contextMenu div.on-off { float: right; }
+			
+			div.contextMenu div.dropdown { float: right; }
+			
+			div.contextMenu div.fullscreen {
+				float: right;
+				margin-left: 10px; }
+
+
+            div.liveVideoContainer{
+                min-height: 500px;
+                clear:both;
+            }
+
+video {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+
+		#cameraGrid {
+			position: relative;
+		}
+		
+		div.videos { 
+			clear: both; 
+			width: auto;
+			display: block;
+			margin: 0 auto;
+		}
+
+.cameraVideo{
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+	text-align: left;
+	overflow: hidden;
+}
+
+.videoImgContainer {
+  background-color: #000000;
+  margin: 0 auto;
+}
+
+.videoImgContainer img{
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+	width: auto;
+	vertical-align: middle;
+}
+
+.videoImgContainer img.tall {
+  height: 100%;
+  width: auto;
+}
+
+.videoImgContainer img.wide {
+  height: auto;
+  width: 100%;
+}
+
+html { height: 100%; }
+
+body {
+	background: white;
+	color: #4d4d4d;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0; }
+
+
+a, span.expressive {
+	color: #0071BC;
+	text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+.enableRule {
+	display: inline-block;
+	vertical-align: top;
+	width: 121px;
+	margin-top: 8px;
+	height: 53px;
+}
+
+.buttonBar {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dddddd), to(#ffffff));
+	background: -webkit-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -moz-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -ms-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -o-linear-gradient(bottom, #dddddd, #ffffff);
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	border-radius: 10px; }
+
+	
+	a.button {
+		text-transform: uppercase;
+		padding: 12px 18px;
+		display: inline-block;
+		border-radius: 10px; }
+
+	.enableRule a.button {
+		text-transform: uppercase;
+		padding: 18px 18px;
+		display: inline-block;
+		border-radius: 10px; }
+	
+	a.buttonIcon {
+		padding: 10px 14px;
+		display: inline-block;
+		border-radius: 10px; }
+			
+	a.button:hover,
+	a.buttonIcon:hover { background-color: #fff; }
+	
+	a.active {
+		color: #fff;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0071bc), to(#29abe2));
+		background: -webkit-linear-gradient(bottom, #0071bc, #29abe2);
+		background: -moz-linear-gradient(bottom, #0071bc, #29abe2);
+		background: -ms-linear-gradient(bottom, #0071bc, #29abe2);
+		background: -o-linear-gradient(bottom, #0071bc, #29abe2);
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		font-weight: bold; }
+
+
+  .cameraVideo a{
+      display:block;
+  }
+
+
+#cameraGrid .cameraVideo a {
+  position:relative;
+}
+
+
+div.cameraTitle {
+  background-color: rgba(34, 34, 34, .5);
+  padding: 4px 0;
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+
+a .cameraTitle{
+  color: #FFFFFF;
+}
+
+.cameraTitle span{
+  margin-left:4px;
+}
+
+
+/*--- RULES ---*/
+div.rule {
+    color: #0071bc;
+    width: 770px;
+		width: calc(100% - 167px);
+    border: 1px solid #ccc;
+		margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding: 10px 15px;
+    display: inline-block;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6e6e6), to(#ffffff));
+    background: -webkit-linear-gradient(bottom, #e6e6e6, #ffffff);
+    background: -moz-linear-gradient(bottom, #e6e6e6, #ffffff);
+    background: -ms-linear-gradient(bottom, #e6e6e6, #ffffff);
+    background: -o-linear-gradient(bottom, #e6e6e6, #ffffff); }
+
+div.rule span {
+  font-weight:bold;
+  margin: 7px 10px 0 0;
+  text-decoration: underline;
+  float: right;
+}
+
+div.rule span:hover {
+  cursor: pointer;
+}
+
+div.ruleIcon {
+    margin-right: 15px;
+    float: left; }
+
+div.ruleDescription {
+    margin-right: 15px;
+    float: left; }
+
+div.ruleLink {
+    margin-top: 8px;
+    float: right; }
+
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.ellipsis.multiline {
+  white-space: normal;
+}
+
+#cameraName {
+  width: 315px;
+  overflow: hidden;
+}
+
+.cameraVideo img{
+  border:none;
+}
+
+/* BlockUI is overlay shown while loading video screen */
+.blockOverlay {
+	opacity: 0.3 !important;
+}
+
+#video-message h1 {
+	color: white;
+	padding-top: 30%;
+	text-align: center;
+}
+
+.cameraTitle span {
+	white-space: nowrap;
+}
+
+div.cameraTitle {
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}
+
+.liveVideoContainer {
+	background-color: black !important;
+}
+
+#cameraRuleList .ruleDescription {
+	white-space: nowrap;
+	max-width: 600px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+}

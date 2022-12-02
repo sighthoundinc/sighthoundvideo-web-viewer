@@ -1,0 +1,551 @@
+.ClipsViewer {
+  @import "videojs.scss";
+
+  .LazyLoad {
+    overflow: hidden;
+  }
+
+  .DayPicker {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    background-color: white;
+    border: 1px solid gray;
+    -webkit-animation: fadein 0.3s;
+    -moz-animation: fadein 0.3s;
+    -ms-animation: fadein 0.3s;
+    animation: fadein 0.3s;
+    z-index: 100;
+  }
+
+  #iconCalendar:hover {
+    cursor: pointer;
+  }
+
+  #clipDay:hover {
+    cursor: pointer;
+  }
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+}
+
+div.clipsMenu {
+  height:100%;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+
+div.clipsNavigation {
+    width: 299px;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0071bc), to(#29abe2));
+    background: -webkit-linear-gradient(bottom, #0071bc, #29abe2);
+    background: -moz-linear-gradient(bottom, #0071bc, #29abe2);
+    background: -ms-linear-gradient(bottom, #0071bc, #29abe2);
+    background: -o-linear-gradient(bottom, #0071bc, #29abe2);
+}
+
+div.clipsNavigationContainer {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    float: left;
+    position: relative;
+}
+
+#clipsNavWrapper {
+  position:absolute;
+  margin: 0 0 0 10px;
+  width:280px;
+}
+
+div.clipsNavArrowLeft {
+  margin-top: 15px;
+  left: 10px;
+  position: absolute;
+}
+
+div.clipsNavArrowRight {
+  margin-top: 15px;
+  right: 12px;
+  position: absolute;
+}
+
+div.clipsNavArrowLeft:hover,
+div.clipsNavArrowRight:hover {
+    cursor: pointer;
+}
+
+div.clipsDate {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px 0;
+    float: left;
+  }
+
+div.clipsResults {
+    color: #fff;
+    padding: 10px;
+}
+
+div.resultNumber, div.resultRefresh {
+    display: table-cell;
+    width: 200px;
+}
+div.resultNumber {
+  padding: 5px 0 0 0;
+}
+
+div.resultRefresh {
+  text-align: right;
+}
+
+div.resultRefresh a {
+  color: #fff;
+}
+
+#refreshClips {
+  cursor: pointer;
+}
+
+div.resultRefresh a:hover {
+  text-decoration: underline;
+}
+
+div.clipsList {
+width: 299px;
+height: 721px;
+margin-top: 5px;
+height: calc(100vh - 245px);
+overflow-y: auto;
+overflow-x: hidden;
+min-height: 500px;
+}
+
+div.clipThumb {
+  width: 279px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  float: left;
+}
+
+div.clipThumb:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+div.clipThumb.active  {
+  background-color: #e0e0e0;
+}
+
+div.clipThumbImage{
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.clipThumbImage img{
+    vertical-align: top;
+    width: 100%;
+}
+
+div.clipThumbDescription{
+  margin-left: 10px;
+  max-width: 150px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.clipThumbDescription strong {
+  white-space: nowrap;
+}
+
+.ClipsViewer {
+  div.clipsMenu {
+    padding-right: 15px;
+  }
+
+  div.clipThumb {
+    min-height: 62px;
+  }
+
+  div.clipThumbImage{
+    width: 80px;
+    max-height: 130px;
+  }
+
+  div.clipThumbImage img{
+    min-height: 50px;
+  }
+}
+
+.LiveViewer {
+  div.clipsMenu {
+    width: 180px;
+    padding-right: 15px;
+    color: #4d4d4d;
+  }
+
+  div.clipsList {
+    width: 100%;
+  }
+
+  div.clipsNavigation {
+    width: 100%;
+  }
+
+  div.clipThumb {
+    min-height: 75px;
+    width: 100%;
+    width: calc(100% - 10px);
+    text-align: center;
+    padding: 10px 5px 6px 5px;
+  }
+
+  div.clipThumbImage{
+    width: 110px;
+    max-height: 160px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  div.clipThumbDescription {
+    display: block;
+    margin: 2px auto;
+    color: #4d4d4d;
+  }
+
+  div.clipThumbImage img{
+    min-height: 50px;
+  }
+}
+
+
+div.clips {
+  width: 638px;
+  width: calc(99% - 320px);
+  margin-left: 1%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.clips div.contextMenu {
+  margin: 0;
+  padding: 10px;
+}
+
+.ClipsViewer {
+  .title {
+    color:#0071BC;
+  }
+}
+
+
+
+div.optionalMenus {
+  font-size: 12px;
+  position: relative;
+  overflow:hidden;
+}
+
+
+
+div.optionalMenuContainer {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  padding: 5px 0 0 0;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+div.menuArrowLeft,
+div.menuArrowRight {
+    background-color: #e6e6e6;
+    opacity: .50;
+    box-shadow: 0 0 10px #333333;
+    padding: 12px 8px;
+    height: 86px;
+    position:absolute;
+}
+
+div.menuArrowLeft a img,
+div.menuArrowRight a img {
+    margin-top: 18px;
+}
+
+div.menuArrowLeft {
+    float: left;
+    -moz-border-radius:  0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+div.menuArrowRight {
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    right: 0px;
+}
+
+div.menuArrowLeft:hover,
+div.menuArrowRight:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+div.cameraMenu, div.filterMenu {
+  width: 100%;
+  margin: 0;
+  float: left;
+}
+
+div.listContainer{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 120%; /* set to 120 to hide the scrollbars */
+}
+
+div.listContainer::-webkit-scrollbar {
+  display: none;
+}
+
+div.optionalMenuEntry:hover {
+  cursor: pointer;
+}
+
+div.optionalMenuEntry img {
+  margin-bottom: 5px;
+}
+
+div.clips div.videoClip {
+  margin: 10px auto;
+}
+
+img.showHideArrow{
+  padding-top: 5px;
+  vertical-align: text-top;
+}
+
+.ClipsViewer {
+  select {
+    vertical-align: middle;
+    vertical-align: text-bottom;
+  }
+
+  .video-js {
+    width: 100% !important;
+    height: auto !important;
+
+    .vjs-current-time {
+      display: block;
+    }
+
+    .vjs-progress-control:hover .vjs-mouse-display:after,
+    .vjs-progress-control:hover .vjs-play-progress:after {
+      display: none;
+  }
+
+    .vjs-volume-panel.vjs-control.vjs-volume-panel-horizontal {
+      width: 12em;
+    }
+  }
+}
+
+.ClipsViewer div.footer{
+    height: 10px;
+}
+
+.ClipsViewer video {
+  max-height: calc(100vh - 240px);
+  min-height: 400px;
+  vertical-align: top;
+}
+
+.ClipsViewer .vjs-big-play-button {
+  top: 190px !important;
+  left: 260px !important;
+}
+
+.ClipsViewer .downloadBtn {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dddddd), to(#ffffff));
+	background: -webkit-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -moz-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -ms-linear-gradient(bottom, #dddddd, #ffffff);
+	background: -o-linear-gradient(bottom, #dddddd, #ffffff);
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+    padding: 7px 10px;
+    margin: 0;
+    height: auto;
+    display: inline;
+    font-size: 14px;
+    color: white;
+
+    &.active {
+		color: #fff;
+		background: -webkit-gradient(linear,0 0,0 100%,from(#0071bc),to(#29abe2));
+		background: -webkit-linear-gradient(bottom,#0071bc,#29abe2);
+		background: -moz-linear-gradient(bottom,#0071bc,#29abe2);
+		background: -ms-linear-gradient(bottom,#0071bc,#29abe2);
+		background: -o-linear-gradient(bottom,#0071bc,#29abe2);
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		font-weight: 700;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+/* Styles that are common to both the mobile and desktop version of the app */
+
+div.optionalMenuEntry {
+  width: 100px;
+  height: 83px;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+  margin: 0 5px;
+  padding: 7px;
+}
+
+div.optionalMenuEntry:first-child {
+  margin-left: 10px;
+}
+div.optionalMenuEntry:last-child {
+  margin-right: 10px;
+}
+
+div.optionalMenuEntry.active {
+  color: #fff;
+  font-weight:bold;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0071bc), to(#29abe2));
+  background: -webkit-linear-gradient(bottom, #0071bc, #29abe2);
+  background: -moz-linear-gradient(bottom, #0071bc, #29abe2);
+  background: -ms-linear-gradient(bottom, #0071bc, #29abe2);
+  background: -o-linear-gradient(bottom, #0071bc, #29abe2);
+
+  border: 1px solid #ccc;
+  padding-bottom: 35px;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+div.optionalMenuEntry.active,
+div.optionalMenuContainer,
+.horizontalScroll,
+.horizontalScroll .viewport
+{
+  height: 115px;
+}
+
+.ClipsViewer .menu_button {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background:white;
+  margin: 5px;
+  border: 1px solid #ccc;
+  overflow:hidden;
+}
+
+.ClipsViewer div.active .menu_button {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #FFF;
+}
+
+.rule_inner_wrapper,
+.camera_inner_wrapper {
+  height:66px;
+}
+
+.rule_inner_wrapper{
+  background-image: url('/img/any_objects_magglass.png');
+  background-size:30px;
+  background-repeat:no-repeat;
+  background-position: 50%, 0px;
+}
+
+.active div.rule_inner_wrapper {
+  background-image: url('/img/any_objects_magglass-w.png');
+}
+
+#rule_0 div.rule_inner_wrapper {
+  background-image: url('/img/all_objects.png');
+  background-size:50px;
+}
+
+#rule_0.active  div.rule_inner_wrapper {
+  background-image: url('/img/all_objects-w.png');
+}
+
+#rule_1 div.rule_inner_wrapper {
+  background-image: url('/img/people.png');
+}
+
+#rule_1.active  div.rule_inner_wrapper {
+  background-image: url('/img/people-w.png');
+}
+
+#rule_2 div.rule_inner_wrapper {
+  background-image: url('/img/unknown_objects.png');
+  background-size:40px;
+}
+
+#rule_2.active  div.rule_inner_wrapper {
+  background-image: url('/img/unknown_objects-w.png');
+}
+
+div.camera_inner_wrapper  {
+  background-size:100%;
+  background-image: url('/img/cameraOff.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#camera_0 div.camera_inner_wrapper {
+  background-image: url('/img/any_cameras.png');
+  background-size:50px;
+}
+
+#camera_0.active div.camera_inner_wrapper {
+  background-image: url('/img/any_cameras-w.png');
+}
+
+.ClipsViewer div.active span {
+  color:#FFFFFF;
+}
+
+.optionalMenuEntry span {
+  height:40px;
+  color:#0071bc;
+}
